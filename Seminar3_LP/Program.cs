@@ -8,7 +8,7 @@
 23432 -> да
 */
 
-/*
+
 Console.WriteLine("Введите пятизначное число:");
 int number = Convert.ToInt32(Console.ReadLine()); // 45678
 
@@ -26,7 +26,7 @@ else
     {
         Console.WriteLine("Введенное не палиндромом");
     }
-*/
+
 
 /*
 Задача 21
@@ -36,6 +36,7 @@ else
 A (3,6,8); B (2,1,-7), -> 15.84
 A (7,-5, 0); B (1,-1,9) -> 11.53
 */
+
 
 Console.WriteLine("Введите координату X первой точки:");
 int onePointX = Convert.ToInt32(Console.ReadLine());
@@ -60,6 +61,7 @@ double distance = Math.Pow(
 
 Console.WriteLine($"Растояние между 2 точками в трехмерном пространстве:\t{distance}");
 
+
 /*
 Задача 23
 
@@ -68,3 +70,16 @@ Console.WriteLine($"Растояние между 2 точками в трехм
 3 -> 1, 8, 27
 5 -> 1, 8, 27, 64, 125
 */
+
+Console.WriteLine("Введите число N:");
+int number = Convert.ToInt32(Console.ReadLine());
+
+double kub = 0;
+double i = 0;
+
+while (i <= number)
+{
+    kub = Math.Pow(i, 3);
+    Console.WriteLine(kub);
+    i = i + 1;
+}
