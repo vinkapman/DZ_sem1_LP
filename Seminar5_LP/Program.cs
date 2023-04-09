@@ -25,31 +25,31 @@
 
 [3, 7, 23, 12] -> 19
 [-4, -6, 89, 6] -> 0
+*/
 
-
-            int sumIndex = 0;
+            int sum = 0;
             int[] myArr = new int[5];
             Random rand = new Random();
             for (int x = 0; x < myArr.Length; x++)
                 {
-                    myArr[x] = rand.Next();
+                    myArr[x] = rand.Next(10);
                     Console.WriteLine(myArr[x]);
                 }
             for (int i = 0; i < myArr.Length; i++)
                 {
-                    if (myArr[i]%2 !=0)
+                    if (i%2 !=0)
                     {
-                        sumIndex = sumIndex + i;
+                        sum = sum + myArr[i];
                     }
                 }
-                Console.WriteLine(sumIndex);
+                Console.WriteLine(sum);
 
-
+/*
 Задача 38: Задайте массив вещественных чисел. 
 Найдите разницу между максимальным и минимальным элементов массива.
 
 [3 7 22 2 78] -> 76
-*/
+
 
             double[] myArr = new double[5];
             Random rand = new Random();
@@ -72,3 +72,4 @@
                     }
                 }
                 Console.WriteLine($"разница между максимальным {max} значением и минимальным {min} равно:{max-min}");
+*/
